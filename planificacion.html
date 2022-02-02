@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Página web</title>
+    <link rel="stylesheet" href="css/planificacioncss.css" />
+</head>
+
+<body>
+    <div id="arriba"></div>
+        <div id="arrow">
+        <a href="#arriba"><img src="imagenes/boton-de-inicio.png" alt="flecha"></a>
+    </div>
+<header>
+        <nav>
+            <a href="Index.html"><img src="cifp_logo.png"></a>
+            <ul class="menu">
+                <li><a href="#">Inicio</a>
+                        <ul>
+                            <li><a href="/Planificacion.html#estructura">Estructura</a></li>
+                            <li><a href="Porfolio/Planificacion.html#elementos_basicos">Elementos Basicos</a></li>
+                            <li><a href="Porfolio/Planificacion.html#maquetacion">Maquetación</a></li>
+                            <li><a href="Porfolio/Planificacion.html#guias_de_estilo">Guías de Estilo</a></li>
+                        </ul>
+                    </li>
+                <li><a href="planificacion.html">Planificacion Web</a>
+                <ul>
+                    <li><a href="Porfolio/Accesibilidad.html#concepto">Concepto</a></li>
+                    <li><a href="Porfolio/Accesibilidad.html#consorcio">Consorcio</a></li>
+                    <li><a href="Porfolio/Accesibilidad.html#consejos">Consejos web accesible</a></li>
+                    <li><a href="Porfolio/Accesibilidad.html#evolucion">Evolución</a></li>
+                </ul>
+                </li>
+                <li><a href="Porfolio/Usabilidad.html">Usabilidad</a>
+                <ul>
+                    <li><a href="Porfolio/Usabilidad.html#concepto">Concepto</a></li>
+                    <li><a href="Porfolio/Usabilidad.html#directrices">Directrices y consejos</a></li>
+                    <li><a href="Porfolio/Usabilidad.html#beneficios">Beneficios</a></li>
+                    <li><a href="Porfolio/Usabilidad.html#seo">Seo - Posicionamiento</a></li>
+                </ul>
+                </li>
+                <li><a href="Porfolio/Derechos_Licencias.html">Derechos/Licencias</a>
+                    <ul>
+                        <li><a href="Porfolio/Derechos_Licencias.html#copyright">Copyright</a></li>
+                        <li><a href="Porfolio/Derechos_Licencias.html#software">Licencias de Software</a></li>
+                        <li><a href="Porfolio/Derechos_Licencias.html#beneficios">Tipos de Licencias</a></li>
+                        <li><a href="Porfolio/Derechos_Licencias.html#copyleft">Copyleft</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Imágenes</a>
+                    <ul>
+                        <li><a href="Porfolio/Imagenes.html#Tipo">Tipo</a></li>
+                        <li><a href="Porfolio/Imagenes.html#Formatos">Formatos</a></li>
+                        <li><a href="Porfolio/Imagenes.html#software_imagenes">Software Imagenes</a></li>
+                        <li><a href="Porfolio/Imagenes.html#Inclusion">Inclusion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<section>
+<h2>Planificación Web</h2>
+    <h3>Elementos básicos de una interfaz web</h3>
+    <h4>El color</h4>
+    <article>
+        <p><strong>Modelo RGB</strong><br/><br/>
+            El modelo RGB se basa en lo que se conoce como síntesis aditiva de color. Empleando la luminosidad del rojo, el verde y el azul en diferentes proporciones, se produce el resto de los colores. Los monitores de los ordenadores apelan a la síntesis aditiva de color para la representación de los colores.<br/><img src="imagenes/rgb.PNG"/><br/>
+            Los valores que se les da al RGB son valores hexadecimales que van desde el 00 hasta el FF. En html, al valor del color se le antepone una almohadilla. De esta forma un color rojo sería aquel que solo tiene activado el Red, el verde solo la parte del Green y el azul la parte del Blue:<br/><br/>Rojo #FF0000 Verde #00FF00 Azul #0000FF<br/><br/>
+            Otras combinaciones generales de colores serían el negro (activando todos los colores), y el blanco (desactivando todos los colores):<br/><br/> Blanco #FFFFFF Negro #000000<br/><br/>
+            Y luego combinaciones de los múltiples valores hexadecimales:<br/><br/> Gris Plata #C0C0C0 Azul Marino #000080 Verde Oliva #808000 <br/><br/>Existe un modelo de color RGB con un cuarto adicional denominado RGBA. Esta última letra es el valor “alfa”, e indica la opacidad de cada píxel:<br/><br/> Rgba(0,255,0,0.6)<br/><br/>
+            El principal problema del modelo RGB es que, por sí mismo, no ofrece una definición exacta de los tres colores que constituyen su esencia. Es decir: distintos modelos RGB pueden emplear distintas tonalidades de rojo, verde y azul. Por lo tanto, los colores resultantes de la síntesis aditiva también variarán de acuerdo al modelo RGB empleado.<br/><br/>
+            Otro inconveniente del modelo RGB es que está basado en cómo funcionaba el hardware antiguamente, y los dispositivos actuales se adaptan peor a este modelo. Además, no es nada intuitivo y no se corresponde con la manera natural en la que la gente observa los colores, basada más en la intensidad de la luz.<br/><br/>
+            La noción de RGB también aparece en el tratamiento de los colores que se realiza a ciertas señales de vídeo. En este caso, las señales se dividen de acuerdo al color y se transmiten de forma independiente. El resultado es una reproducción de mayor calidad.
+        </p>
+        <p><strong>Modelo HSL</strong><br/><br/>
+            El modelo HSL es una nueva forma de seleccionar un color, basándose en su tonalidad, saturación e iluminación (Hue, Saturation, Lightness).<br/><img src="imagenes/hls.PNG"/><br/>
+            <strong>Tono (Hue):</strong>es un círculo de colores que varía desde el rojo (0%) a rojo de nuevo (360º, que es lo mismo que 0º), pasando por 120º para el verde, 240º para el azul y todos los demás colores "puros" en el medio:<br/><img src="imagenes/tono.PNG"/><br/>
+            
+            <strong>Saturación (Saturation):</strong>indica el porcentaje del color anterior que va a aparecer en la mezcla. Va de 0% (solo grises, nada de color) a 100% (color completo). Por ejemplo, esta es la variación completa de saturación para el color rojo:<br/>
+
+            <img src="imagenes/saturacion.PNG"/><br/>
+            <strong>Luminosidad (Lightness o Luminance): </strong>representa la claridad del color también con un porcentaje, siendo 0% oscuridad total (negro, independientemente de los otros componentes HSL) y 100% claridad absoluta (blanco). Por ejemplo, esta es la variación completa de luminosidad para el color blanco:
+            <img src="imagenes/luminosidad.PNG"/><br/>
+            Al igual que con el RGB, el HSL cuenta con la variante HSLA, que permite especificar la
+            transparencia del color usando un valor “alfa” al final:<br/><br/>hsla(180,100%,100%, 0.8)<br/><br/>La gran ventaja de este modelo es que está destinado a ser más comprensible para nosotros.<br/><br/>Su inconveniente es que no es compatible con las versiones anteriores de Internet Explorer.<br/><br/>
+        </p>
+        <p><strong>>Modelo HSV</strong><br/><br/>
+            En el modelo   de   color   HSV,   un color se   define   por   su tono (H),   su saturación (S)   y su luminosidad (V), por lo que se parece más a la percepción del color humano que a los modelos de color aditivos y sustractivos. Es fácil ajustar un color por su saturación y brillo.<br/><br/>
+            <img src="imagenes/hsv.PNG"/><br/>
+            <strong>Tono(Hue):</strong>El tono es la porción de color del modelo de color, expresado como un número de 0 a 360 grados, siendo rojo de 0º a 60º, amarillo de 60º a 120º, verde de 120º a 180º, Cyan de 180º a 240º, azul de 240º a 300º y magenta de 300º a 360º.<br/><br/><img src="imagenes/tono.PNG"/><br/>
+            
+            <strong>Saturación(Saturation):</strong>La saturación es la cantidad de gris en el color, de 0 a 100 por ciento. La reducción de la saturación hacia cero para introducir más gris produce un efecto de desvanecimiento. A veces, la saturación se expresa en un rango de sólo 0-1, donde 0 es gris y 1 es un color primario.<br/><br/>
+            <img src="imagenes/saturacion2.PNG"/><br/>
+            <strong>Valor(Value):</strong>El valor trabaja en conjunto con la saturación y describe el brillo o intensidad del color, desde 0-100 por ciento, donde 0 es completamente negro, y 100 es el más brillante y revela la mayor parte del color.<br/><br/>
+            <img src="imagenes/brillo.PNG"/>
+        </p>
+
+        <p>
+            <div class="lista">
+            <strong>Aplicaciones que usan RGB</strong>
+            <ul>
+                <li>Pixolor</li>
+                <li>Color Lab</li>
+                <li>Color RGB</li>
+                <li>Color Picker</li>
+            </ul>
+        </div>
+        <div class="lista">
+            <strong>Aplicaciones que usan HSL</strong>
+            <ul>
+                <li>La especificación CSS3</li>
+                <li>Facebook api web Developer</li>
+                <li>Macromedia Studio</li>
+                <li>Paint Shop Pro</li>
+            </ul>
+        </div>
+        <div class="lista">
+            <strong>Aplicaciones que usan HSV</strong>
+            <ul>
+                <li>Apple Mac OS X system color picker</li>
+                <li>The GIMP Xara X</li>
+                <li>Xara x</li>
+                <li>Paint.NET</li>
+            </ul>
+        </div>
+        </p>
+    </article>
+    <article>
+        <h4>La tipografía</h4>
+        <p><strong>Con Serif:</strong>las tipografías con Serif son aquellas que cuentan con remates o terminales, que son esos pequeños adornos ubicados en los extremos de los trazos de los caracteres. Suelen ser concebidas como serias y tradicionales. Cuentan con un aire académico. Son idóneas para párrafos o textos largos, ya que las serifas contribuyen a que se cree una línea imaginaria bajo el texto que facilita mucho la lectura a nuestro ojo.
+            Algunos ejemplos de fuentes tipográficas Serif son: Times New Roman, Garamond o Book Antigua.<br/>
+            <p><strong>Sin Serif:</strong>las tipografías sin serifa o de palo seco se caracterizan por la ausencia de remates y terminales. Sus trazos apenas presentan contrastes. Suelen asociarse con la tipografía comercial, ya que ofrecen un resultado muy bueno para la impresión de titulares o poco texto, en carteles y publicidad. Este estilo de fuente evoca modernidad, seguridad, neutralidad y minimalismo. Es muy recurrida también para textos en pantalla y textos en tamaños pequeños. Gracias precisamente a la ausencia de serifas, esta tipografía puede resultar más legible en textos de pequeño tamaño que las que sí las tienen.
+                Algunos ejemplos de tipografías Sin Serif son: Futura, Helvética, Arial, Gotham o Avenir.<br/>
+                <img src="imagenes/tipografia.PNG"/>
+            </p>
+            <p><strong>Unidades de medida relativa y absoluta. Pros y contras.</strong>Las medidas en CSS se emplean, entre otras, para definir la altura, anchura y márgenes de los elementos y para establecer el tamaño de letra del texto. Todas las medidas se indican como un valor numérico entero o decimal seguido de una unidad de medida (sin ningún espacio en blanco entre el número y la unidad de medida).<br/>
+                CSS divide las unidades de medida en dos grupos: absolutas y relativas. Las medidas relativas definen su valor en relación con otra medida, por lo que para obtener su valor real, se debe realizar alguna operación con el valor indicado. Las unidades absolutas establecen de forma completa el valor de una medida, por lo que su valor real es directamente el valor indicado.
+                <div id="abs">
+                    <strong>Unidades absolutas</strong><br/><br/>
+                    Una medida indicada mediante unidades absolutas está completamente definida, ya que su valor no depende de otro valor de referencia. A continuación se muestra la lista completa de unidades absolutas definidas por CSS y su significado:
+                    <ul>
+                        <li>px: píxeles</li>
+                        <li>in: pulgadas (1 in es igual a 96px)</li>
+                        <li>pt: puntos (1 pt es igual a 1/72 in)</li>
+                        <li>cm: centímetros</li>
+                        <li>mm: milímetros</li>
+                        <li>pc: pico</li>
+                    </ul>
+                    La principal ventaja de las unidades absolutas es que su valor es directamente el valor que se debe utilizar, sin necesidad de realizar cálculos intermedios. Su principal desventaja es que son muy poco flexibles y no se adaptan fácilmente a los diferentes medios.<br/>
+                </div>
+                <div id="rel">
+                    <strong>Unidades relativas</strong><br/>
+                    Las unidades relativas, a diferencia de las absolutas, no están completamente definidas, ya que su valor siempre está referenciado respecto a otro valor. A pesar de su aparente dificultad, son las más utilizadas en el diseño web por la flexibilidad con la que se adaptan a los diferentes medios:
+                    <ul>
+                        <li>%: porcentaje</li>
+                        <li>em: altura de la fuente</li>
+                        <li>rem: Root-em</li>
+                        <li>vw: viewport width</li>
+                        <li>vh: viewport height</li>
+                        <li>vmin: viewport menor, entre altura o anchura</li>
+                        <li>vh: viewport height</li>
+                        <li>vmin: viewport menor, entre altura o anchura</li>
+                        <li>vmax: bviewport mayor, entre altura o anchura</li>
+                        <li>ex: anchura de la fuente para la letra "X"</li>
+                        <li>ch: la anchura del caracter "0" (cero)</li>
+                    </ul>
+                    La gran ventaja de las unidades relativas es que siempre mantienen las proporciones del diseño de la página.
+                </div>
+            </p>
+        </article>
+        <article>
+            <h4>Los iconos</h4>
+            Los iconos han sido, y siguen siendo, un elemento de gran importancia en diseño web ya que, además de por estética, si se usan correctamente, pueden aportar numerosos beneficios a una página web.<br/>
+            Pueden ayudar a separar visualmente los diferentes bloques de contenido, a aligerar secciones extensas, a aportar personalidad a un diseño… pero todos estos beneficios desaparecen si no se usan correctamente, o se abusa de ellos y se utilizan para reemplazar, en lugar de acompañar y enfatizar, los contenidos.<br/><br/>
+            Algunos de los usos más beneficiosos de los iconos son:
+            <ul>
+                <li>Añadir funcionalidades</li>
+                <li>Ayudar a la comprensión</li>
+                <li>Despertar interés</li>
+                <li>Aligerar contenidos</li>
+                <li>Enfatizar títulos</li>
+                <li>Guiar la vista</li>
+                <li>Enumerar listas</li>
+                <li>Romper la monotonía</li>
+                <li>Aportar estilo</li>
+            </ul>
+
+        </article>
+    
+   
+        <h3>Estructura de una página web</h3>
+        <article>
+            Cuando hablamos de las partes de una página web, generalmente nos referimos a su estructura. Es decir, todo el conjunto de elementos o de diseño o funcionalidades, tales como secciones o menús, que hacen la página web navegable y funcional.
+
+            <h4>Cabecera</h4>
+            La cabecera de la página web debe ser igual o, en todo caso, parecida en el resto de páginas del sitio web. Es lo primero que ven los usuarios y crea la primera impresión que es muy importante. Es la parte superior de la página web. En ella se encuentra la información básica de empresa o marca y es consistente en todo el sitio, es decir, se repite en cada página de la web que visitamos. Es de anchura generalmente igual a la de la página y altura variable.<br/><br/>
+            Los elementos que normalmente se encuentran en la cabecera son:
+            <ul>
+
+                <li>Logo de la empresa</li>
+                <li>El menú de navegación</li>
+                <li>Un cuadro de búsqueda</li>
+                <li>Una pequeña descripción de la web</li>
+
+            </ul>
+
+            En lenguaje HTML, todo el contenido de la cabecera aparece entre las siguientes etiquetas "header" y /header.
+
+            <h4>Menú o sistema de navegación</h4>
+            Generalmente se presentan como menús formados por diferentes opciones, con las que el usuario puede interaccionar; al hacer click sobre cada una ellas es cargada una página o sección de la misma diferente.<br/><br/>
+            El contenido de esta parte no será el mismo en la página de contacto que en la página principal.<br/><br/>
+            Cada menú de navegación puede estar formado por opciones textuales, gráficas o mixtas, siendo frecuente utilizar en ellas efectos dinámicos para acentuar el carácter interactivo de las mismas.<br/>
+
+            <p><strong>Tipos de menú</strong></p>
+            <ul>
+                <li>One Page: web sin menú.</li>
+                <li>Menú estándar: es el menú tradicional.</li>
+                <li>Menú desplegable: muestra mayor cantidad de niveles de navegación al desplegarse.</li>
+                <li>Mega menú: busca ordenar la información por categorías u otros requisitos.</li>
+                <li>Menú hamburgesa: menú desplegable al que se accede mediante un icono al que se llama "hamburguesa".</li>
+            </ul>
+
+            <h4>Cuerpo de la página, área de contenido</h4>
+            Es la parte de la web que alberga el contenido principal de una página. Esta parte sí es diferente en cada página de un sitio. Es decir, no será el mismo contenido el que se incluye en la página de contacto que en la página principal.<br/>En HTML este contenido se encuentra entre las etiquetas "body" y "/body".<br/>
+            Se recomienda que esta sección tenga un color distinto, letra diferente y un poco más grande que en el resto de la página, y que ocupe de un 50% a un 80% del total de esta.
+
+            <h4>Pie de página</h4>
+            El footer o pie de página es la parte inferior de una web y que, normalmente, se encuentra diferenciada del resto (cambios de color, de fuente, imágenes…).<br/>
+            En el footer se incluyen con frecuencia enlaces de interés, cajas de suscripción, mapas, enlaces a perfiles sociales… Suelen ser elementos importantes que queremos que cierren la web y refuercen ideas en el usuario.<br/>
+            Algunos elementos que se pueden incluir en el footer para sacarle partido son:
+            <ul>
+                <li>Botones a redes sociales</li>
+                <li>Datos para contactar</li>
+                <li>Menú de navegación</li>
+                <li>Logotipo</li>
+            </ul>
+
+            <h4>Los espacios en blanco en el diseño</h4>
+            La distribución de los espacios es clave para el diseño web. Es necesario saber distribuir los elementos en el espacio de maniobra de la página web, incluidos aquellos espacios negativos o en blanco. De esta forma se conseguirá una óptima experiencia de usuario, lo que se traducirá en una mayor conversión y éxito de la web.<br/>
+            Los espacios en blanco no tiene que ser necesariamente blanco ni vacíos, simplemente no están ocupados por contenidos. Pues hablamos de espacios en color, con una imagen de fondo o con cualquier ilustración o creatividad que sirva de apoyo a nuestro contenido. Esto facilita la lectura y la comprensión, guía al usuario por la página y hace al diseño más atractivo.
+
+        </article>
+    
+   
+        <h3>Maquetación web</h3>
+        <article>
+            La maquetación es la distribución de los elementos en nuestra página. Piensa en una página web cualquiera. Seguro que distingues algunos elementos, como encabezados, columnas, menús laterales, etc.<br/><br/>
+            Hace unos años, la maquetación de las páginas web se realizaba utilizando tablas (&lt;table&gt;). Una vez entendido este proceso podía resultar sencillo, aunque si no se dominaban las tablas, podía convertirse en algo tedioso. El problema de las tablas es que generaban una página muy encorsetada, y el código se volvía complejo de entender. Además, algunos buscadores encontraban problemas al analizar la estructura de la página.<br/><br/>
+            Actualmente, la maquetación con tablas ha caído en desuso, y se realiza utilizando capas (&lt;div&gt;), también llamadas divisiones o contenedores. La colocación de las capas en la página se realiza a través de CSS. Esto permite, por ejemplo, que podamos pasar de un diseño con un menú lateral a otro con el menú en la parte superior, solo cambiando la hoja de estilos.
+        </article>
+    
+   
+        <h3>Prototipo web</h3>
+        Un prototipo web consiste en un boceto, navegable o no, que permiten crear una referencia visual de la estructura de una página web, definiendo al detalle el contenido y su distribución visual, organizando así la información a nivel de página.<br/><br/>
+        Gracias a su versatilidad, podrá ser empleado como plantilla para que el programador desarrolle una web tal y como aconseja el diseñador UX/UI, o como comprobante de los cambios realizados en una web ya existente.<br/><br/>
+        El desarrollo del prototipo comienza con la definición de los objetivos que se quieren conseguir en la web, y con ellos crear una nueva estructura web, en forma de árbol, en la que se dará nombre a todas las categorías del menú de navegación.<br/><br/>
+        Una vez esto, comenzará el diseño de wireframes o bocetos, con el fin de determinar el lugar donde situar los elementos principales de la web, pensando siempre en donde los espera encontrar el usuario.<br/><br/>
+        En la fase final se realizará el prototipo navegable de toda la web, donde se verá toda la estructura de navegación, así como el diseño completo. El programador simplemente tendrá que replicarlo a través de código.
+        <p>Herramientas para prototipo web:</p>
+        <ul>
+            <li>Justinmind</li>
+            <li>In Vision</li>
+            <li>Origami</li>
+            <li>Proto.io</li>
+            <li>Fuid</li>
+            <li>Codiqa</li>
+        </ul>
+    
+   
+        <h3>Mapa de navegación</h3>
+        <article>
+            El mapa de navegación es un esquema, que se puede pensar como un árbol jerárquico, que representa la arquitectura de las páginas de un sitio web. Esta representación puede ser, como un mapa conceptual, de forma gráfica para visualizar y entender sobre un mapa el recorrido de visitante, es decir, su navegación y cómo este llega a lo que está buscando. También, en este se organiza la distribución y la jerarquía de contenido.<br/><br/>
+            Entre las ventajas de contar con un mapa de navegación está la diferenciación en un sitio amigable y que entiende al usuario, un fácil acceso al contenido, y con ello, la generación de más conversiones y de satisfacción con el servicio que se provee en el sitio web.
+            <p>Pasos para crear un mapa de navegación:</p>
+            <ol>
+                <li>Creación de un diagrama jerárquico para establecer el orden y la importancia de la información.</li>
+                <li>Establecer cuáles y el número de páginas que se van a desplegar en las diferentes secciones del sitio web.</li>
+                <li>Incluir ramificaciones hacia secciones secundarias que se desplegarán de las principales.</li>
+                <li>Revisar que en el diseño se ha incluido diferentes categorías, como también todo el contenido que se necesita mostrar.</li>
+                <li>Compartir y explicar el mapa de navegación a otras personas para identificar si es entendible y amigable de la forma en la que se presenta la información.</li>
+            </ol>
+        </article>
+    
+   
+        <h3>Guías de estilo</h3>
+        <article>
+            Las guías de estilo son la documentación, recogida en un manual de identidad corporativa, que describe los estándares gráficos para una marca. Crear un documento que especifique la paleta de colores, la tipografía, los logos, las imágenes, los patrones, los lemas, etc., de una marca garantiza que la inversión en branding de la marca no se diluya.<br/><br/>
+            Las guías de estilo están estrechamente relacionadas tanto con el diseño corporativo como con la identidad corporativa de las empresas y se encargan de que la identidad visual de la empresa en cuestión también pueda ser reconocida inmediatamente en la red. A este respecto, las guías de estilo web resultan necesarias para presentar a las empresas como una unidad en la totalidad de los canales de comunicación en los que aparece, ya sea en las redes sociales, a través de los correos electrónicos, en la propia página web o en otras publicaciones. Este tipo de manuales ofrecen directrices para todos los trabajadores acerca de cómo se tiene que representar a la empresa tanto a nivel visual como textual para que los clientes (potenciales) puedan clasificarla enseguida.
+        </article>
+    
+   
+        <h4>Interacción persona-ordenador</h4>
+        <article>La interacción persona-ordenador (IPO) es la disciplina dedicada a estudiar cómo se produce la interacción entre las personas y los sistemas informáticos para tratar de mejorar esta relación por medio del diseño gráfico.<br/><br/>
+        Su objetivo principal es incrementar la productividad de los equipos y minimizar los errores al tiempo que se dota a los usuarios de una experiencia segura, confortable y satisfactoria.<br/><br/>
+        Generalmente, los sistemas informáticos son interactivos e involucran al usuario en la resolución de tareas. Para conseguir esta interacción o diálogo entre persona-ordenador se utiliza la interfaz. Esta interfaz de usuario determina, en gran medida, la percepción que el usuario tendrá de una aplicación y es un factor de gran importancia para conseguir una aplicación exitosa.
+
+
+        </article>
+    </section>
+    
+    <footer>
+        <!-- <div class="iconos"> -->
+       
+    <!-- </div> -->
+       <p>Centro Integrado FP Avilés</p>
+       <p>Calle Marqués S/N, 33402 Avilés</p>
+       <p id="h2_tlfno"> Tlfno: 985 545 322</p>
+       <p id="h2_email"> cifpaviles@educastur.princast.es</p>
+        <img src="imagenes/instagram.png">
+        <img src="imagenes/gorjeo.png">
+        <img src="imagenes/gmail.png">
+        <img src="imagenes/linkedin.png">
+   </footer> 
+</body>
+</html>

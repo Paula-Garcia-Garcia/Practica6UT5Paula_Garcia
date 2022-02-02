@@ -1,0 +1,152 @@
+
+        body {
+
+            /*background-color: #d4d4d4;*/
+            font-family: Verdana, Segoe UI, Georgia;
+            background-color:#fff0f3;
+            
+
+        }
+
+/*//coger desde aqui, y luego borrar esto*/
+nav img {
+    position: absolute;
+    left: 5%;
+    bottom: -16px;
+    transform: scale(.7); 
+}
+header{
+    position: relative;
+     height: 90px;
+}
+nav{
+     background: #495057;
+    width: 99%;
+    height: 90px;
+    position: fixed;
+    z-index: 1;
+
+ }
+ .menu{
+    position: absolute;
+    bottom: 0;
+   /* aqui los centras*/
+    left: 18%;
+    display: flex;
+}
+ .menu li{
+   margin-left: 5px;
+   padding: 12px 5px;
+}
+.menu li a{
+   text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 5px;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+
+    .menu li a:hover:after {
+        left: 0;
+    }
+    nav ul{
+            list-style: none;
+
+    }
+nav ol{
+            list-style: none;
+    }
+.menu li a:hover{
+  text-align: center;
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+}
+.menu li:hover ul {
+display: block;
+z-index: 100;
+background: #495057;
+}
+        .logo {
+            position:absolute;
+
+        }
+
+/*//hasta aqui*/
+
+
+
+
+
+
+        .prim {
+            margin-left: 180px;
+        }
+
+        a {
+            margin-top: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff0f3;
+            font-size: 0.8em;
+
+        }
+
+        #titu {
+            white-space : nowrap;
+            font-size : 30px;
+             /*border: 1px solid black;*/
+            color : white;
+            text-shadow : 0.1em 0.1em 0.2em black;
+            font-family : helvetica;
+            margin-top: 200px;
+        }
+        #titu h1{
+            text-align: center;
+        }
+        
+/*
+        section {
+            width: 100%;
+            height: 900px;
+            /*border: 1px solid black;*/
+/*            background: url('../imagenes/cabecera.jpg') no-repeat 500px;
+            margin: auto;
+            display: inline;
+
+        }*/
+
+        .subir {
+            position: absolute;
+            bottom: 0;
+            right: 2%;
+            margin-bottom: 4%;
+        }
+
+        .subir img {
+
+            width: 30px;
+            height: 30px;
+        }
+        
+         footer {
+           
+            background-color:#495057;
+            width : 100%;
+            height: 130px;
+            border: solid black 1px;
+            margin-top: 150px;
+        }
+
+        footer p {
+
+        font-size: 0.8em;
+        text-align: center;
+        color: #fff0f3;
+         
+        }
+ 
